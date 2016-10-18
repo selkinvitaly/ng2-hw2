@@ -1,0 +1,17 @@
+<div class="activity-row" (click)="changePlaceHandler(placeItem.id)" [class.activity-row_selected]="isSelected">
+  <div class="activity-desc">
+    <h5>{{placeItem.placeTitle}}</h5>
+    <h6>T: {{placeItem.temperature}}</h6>
+  </div>
+  <div class="activity-img">
+    <ul>
+      <li style="display: inline-block; width: 50px; height: 50px;">
+        <img style="height: 100%;" [src]="placeItem.firstImage" alt="" />
+      </li>
+      <li style="display: inline-block; width: 50px; height: 50px;">
+        <img style="height: 100%;" [src]="placeItem.secondImage" alt="" />
+      </li>
+    </ul>
+  </div>
+  <div class="clear"></div>
+</div>

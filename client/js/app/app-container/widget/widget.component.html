@@ -1,0 +1,21 @@
+<h1>Hot Weather Widget</h1>
+
+<div class="element">
+  <div class="element-left">
+    <place-component
+      (changePlace)="changePlace($event.selected)"
+      [places]="places"
+      [selected]="selectedId"
+    ></place-component>
+  </div>
+  <div class="element-right">
+    <weather-component [currentPlace]="currentPlace"></weather-component>
+    <stats-component [currentPlace]="currentPlace"></stats-component>
+  </div>
+</div>
+
+<p class="clear"></p>
+
+<div class="copy-right">
+  <p>© 2015 Hot Weather Widget. All rights reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts </a></p>
+</div>

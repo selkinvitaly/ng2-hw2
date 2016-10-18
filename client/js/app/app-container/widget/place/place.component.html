@@ -1,0 +1,21 @@
+<div class="element-bg-img"><img [src]="headerImage" alt="" class="img-responsive"> </div>
+<div class="element-left-bottom">
+  <place-filter
+    [currentFilterId]="currentFilterId"
+    (changeType)=changeTypeHandler($event.selected)
+  ></place-filter>
+  <div class="village">
+    <h3>Righteous indignation & like</h3>
+    <span class="line"> </span>
+    <div class="activity_box">
+      <div class="scrollbar" id="style-2">
+        <place-item
+          *ngFor="let placeItem of places | filterType: currentFilterId; let i = index; trackBy: placeItem?.id"
+          (changePlace)="changePlaceHandler($event.selected)"
+          [placeItem]="placeItem"
+          [isSelected]="placeItem.id === selected"
+        ></place-item>
+      </div>
+    </div>
+  </div>
+</div>

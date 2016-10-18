@@ -1,0 +1,51 @@
+{
+  "name": "hg2-hw2",
+  "version": "1.0.0",
+  "description": "the second homework for ng2 course",
+  "scripts": {
+    "build:clean": "cross-env NODE_ENV=development ./node_modules/.bin/gulp build:clean",
+    "build:dev": "cross-env NODE_ENV=development ./node_modules/.bin/gulp build:dev",
+    "build:prod": "cross-env NODE_ENV=production ./node_modules/.bin/gulp build:prod",
+    "build:watch": "cross-env NODE_ENV=development WATCH=true ./node_modules/.bin/gulp build:watch"
+  },
+  "main": "client/js/main.js",
+  "author": "Selkin Vitaly",
+  "devDependencies": {
+    "@angular/common": "^2.1.0",
+    "@angular/compiler": "^2.1.0",
+    "@angular/core": "^2.1.0",
+    "@angular/platform-browser": "^2.1.0",
+    "@angular/platform-browser-dynamic": "^2.1.0",
+    "autoprefixer": "^6.3.6",
+    "awesome-typescript-loader": "^2.2.4",
+    "browser-sync": "^2.12.10",
+    "config": "^1.21.0",
+    "core-js": "^2.4.1",
+    "css-loader": "^0.25.0",
+    "del": "^2.2.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-base64": "^0.1.3",
+    "gulp-changed": "^1.3.0",
+    "gulp-csscomb": "^3.0.7",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-notify": "^2.2.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-rev": "^7.1.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-stylus": "^2.4.0",
+    "gulp-util": "^3.0.7",
+    "html-loader": "^0.4.4",
+    "postcss-loader": "^1.0.0",
+    "rxjs": "^5.0.0-rc.1",
+    "stylus-loader": "^2.3.1",
+    "to-string-loader": "^1.1.5",
+    "typescript": "^2.0.3",
+    "webpack": "^2.1.0-beta.25",
+    "zone.js": "^0.6.25"
+  },
+  "private": true,
+  "dependencies": {
+    "@types/node": "^6.0.45"
+  }
+}

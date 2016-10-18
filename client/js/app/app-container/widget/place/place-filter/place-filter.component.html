@@ -1,0 +1,9 @@
+<div class="ele-strip">
+  <ul>
+    <li *ngFor="let filterTypeItem of filterTypes; trackBy: filterType?.id"
+        (click)="changeTypeHandler($event, filterTypeItem.id)"
+        [ngClass]="{'filter__item_selected': checkSelected(filterTypeItem.id)}">
+      <a href="#">{{filterTypeItem.name}}</a>
+    </li>
+  </ul>
+</div>
